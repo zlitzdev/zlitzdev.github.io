@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zlitz</title>
+  <link rel="stylesheet" href="resources/css/styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="tabs">
+    <h1 class="tab-title disable-text" onclick="openTab(event, 'Home')">Zlitz Games</h1>
+    <button id="tb__Home" class="tab-link active" onclick="openTab(event, 'Home')">Home</button>
+    <button id="tb__AboutMe" class="tab-link" onclick="openTab(event, 'AboutMe')">About Me</button>
+    <button id="tb__Projects" class="tab-link" onclick="openTab(event, 'Projects')">Projects</button>
+    <button id="tb__Contact" class="tab-link" onclick="openTab(event, 'Contact')">Contact</button>
+  </div>
+
+  <div id="Home" class="tab-content active">
+    <div class="content-container">
+      <h3>Vo Van Hieu</h3>
+      <h1>Unity Developer</h1>
+      <p>Passionate Unity developer who also loves playing games.</p>
+      <h1>Highlights</h1>
+      <iframe class="demo-reel" width="960" height="540" oncontextmenu="return false;" disablePictureInPicture
+        src="https://drive.google.com/file/d/1EcyZOKF3XhLHBMdZwj4g4nvKx_VsMYjh/preview">
+      </iframe>
+    </div>
+  </div>
+
+  <div id="AboutMe" class="tab-content">
+    <div class="content-container">
+      <h1>About Me</h1>
+      <p>
+        Hello! I'm <b>Vo Van Hieu</b>, a <b>Unity developer</b> from <b>Ho Chi Minh City, Vietnam</b>. Online, I'm also known as <b>Zlitz</b>. Over the past year, I've worked on several Unity projects, honing my skills and expanding my creative and technical expertise. It's been my dream to create games that people will love and enjoy.<br><br>
+
+        I graduated from the <b>University of Science</b> in 2024 with a degree in <b>Computer Science</b>. Throughout my journey, I’ve been largely self-taught, diving deep into Unity development and exploring various facets of game creation.<br><br>
+
+        My experience spans both <b>programming</b> and <b>art</b>. While programming is my strong suit, I also enjoy creating pixel art to bring visual charm to my projects. As a solo developer, I’ve worked on diverse areas, including <b>game mechanics</b>, <b>art design</b>, and even <b>custom Unity tools</b> to streamline workflows.<br><br>
+
+        Currently, I’m seeking professional opportunities in the game development industry where I can contribute to exciting projects and grow alongside a talented team.<br>
+      </p>
+      <img class="decorator-image" src="resources/images/decorator.png">
+    </div>
+  </div>
+
+  <div id="Projects" class="tab-content">
+    <div class="content-container">
+      <h1>Projects</h1>
+      <p>Have a look of what I've been doing!</p>
+
+      <div class="projects">
+        <h3>Games</h3>
+
+        <!-- Ooze Keeper -->
+        <div class="project-item">
+          <div class="project-image-container">
+              <img class="project-image" src="resources/images/project_1b.png">
+              <img class="project-image front" src="resources/images/project_1f.png">
+          </div>
+          <div class="project-content">
+            <p>
+              <b>Ooze Keeper</b> is a tactical roguelike strategy game about raising slimes and managing resources. Combine existing slimes to create new ones, create complex processing chains and more!<br>
+              Status: <b>Early Access</b>
+            </p>
+            <div class="project-buttons">
+              <a href="https://store.steampowered.com/app/3144770/Ooze_Keeper/" class="icon-button steam" title="Steam" target="_blank">
+                <i class="fab fa-steam"></i>
+              </a>
+              <a href="https://play.google.com/" class="icon-button play-store" title="Play Store" target="_blank">
+                <i class="fab fa-google-play"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <h3>Unity Packages</h3>
+      
+        <!-- Better Tile -->
+        <div class="project-item">
+          <div class="project-image-container">
+              <img class="project-image" src="resources/images/project_1b.png">
+          </div>
+          <div class="project-content">
+            <p>
+              <b>Better Tile</b> is a custom editor tool for Unity that allows a more straightforward creation of rule tiles with complex rules.<br>
+              Status: <b>Work in Progress</b>
+            </p>
+            <div class="project-buttons">
+              <a href="https://github.com/zlitzdev/BetterTile" class="icon-button github" title="GitHub" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- World Gen -->
+        <div class="project-item">
+          <div class="project-image-container">
+              <img class="project-image" src="resources/images/project_1b.png">
+          </div>
+          <div class="project-content">
+            <p>
+              <b>World Gen</b> is a world building tool that lets you create and use procedural generation templates. Currently support a constraint-based procedural tilemap world generator.<br>
+              Status: <b>Completed</b>
+            </p>
+            <div class="project-buttons">
+              <a href="https://github.com/zlitzdev/WorldGen" class="icon-button github" title="GitHub" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Productive Kit -->
+        <div class="project-item">
+          <div class="project-image-container">
+              <img class="project-image" src="resources/images/project_1b.png">
+          </div>
+          <div class="project-content">
+            <p>
+              <b>Productive Kit</b> is a small package that helps developers in project management, either with custom folder icons or notes.<br>
+              Status: <b>Work in Progress</b>
+            </p>
+            <div class="project-buttons">
+              <a href="https://github.com/zlitzdev/ProductiveKit" class="icon-button github" title="GitHub" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Serializables -->
+        <div class="project-item">
+          <div class="project-image-container">
+              <img class="project-image" src="resources/images/project_1b.png">
+          </div>
+          <div class="project-content">
+            <p>
+              <b>Serializables</b> is a collection of many custom serializable types for Unity.<br>
+              Status: <b>Completed</b>
+            </p>
+            <div class="project-buttons">
+              <a href="https://github.com/zlitzdev/Serializables" class="icon-button github" title="GitHub" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="Contact" class="tab-content">
+    <div class="content-container">
+      <h1>Contact</h1>
+      <p>
+        Please send me an e-mail for a downloadable .pdf version of the resume.
+      </p>
+      <div class="contact-container">
+        <div class="contact-item">
+          <a href="mailto:vvhieu1203@gmail.com" target="_blank">
+            <i class="fas fa-envelope"></i>
+            vvhieu1203@gmail.com
+          </a>
+        </div>
+        <div class="contact-item">
+          <a href="https://github.com/zlitzdev" target="_blank">
+            <i class="fab fa-github"></i>
+            zlitzdev
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="resources/js/index.js"></script>
+</body>
+</html>
